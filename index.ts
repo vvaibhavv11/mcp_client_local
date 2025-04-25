@@ -2,7 +2,7 @@ import { input } from "@inquirer/prompts";
 import { githubMcpClient, gitMcpClient, messages, model } from "./utils";
 import { streamText } from "ai";
 
-console.log(`This dir will be used for git mcp${process.cwd()}`)
+console.log(`This dir will be used for git mcp ${process.cwd()}`)
 const githubTools = await githubMcpClient.tools();
 const gitTools = await gitMcpClient.tools();
 let combinedTools: any = {};

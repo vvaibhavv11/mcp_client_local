@@ -39,6 +39,6 @@ export const githubMcpClient = await createMCPClient({
 export const gitMcpClient = await createMCPClient({
     transport: new StdioMCPTransport({
         command: "/usr/bin/uvx",
-        args: ["mcp-server-git", "--repository", process.cwd()],
+        args: ["mcp-server-git", "--repository", `${process.cwd()}`],
     }),
 });
