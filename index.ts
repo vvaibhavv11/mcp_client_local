@@ -39,6 +39,7 @@ async function streamResponse() {
             model: model,
             messages: messages,
             tools: combinedTools,
+            maxSteps: 10
         })
 
         for await (const text of result.textStream) {
