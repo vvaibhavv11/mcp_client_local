@@ -3,7 +3,6 @@
 ## Setup Instructions
 
 1.  **Install Bun:** This project requires Bun. You can install it from [https://bun.sh/](https://bun.sh/).
-
 2.  **Environment Variables:**
 
     *   `GOOGLE_GEN_AI_API_KEY`: Your Google Generative AI API key.
@@ -17,3 +16,5 @@
     ```bash
     bun index.js
     ```
+
+mcp client that is connected to the model and then model can able to perform the action on github and git
