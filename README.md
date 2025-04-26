@@ -1,5 +1,8 @@
 # mcp_client_local
 
+## Description
+The MCP client connects to a model, enabling the model to perform actions on GitHub and Git.
+
 ## Setup Instructions
 
 1.  **Install Bun:** This project requires Bun. You can install it from [https://bun.sh/](https://bun.sh/).
@@ -16,5 +19,3 @@
     ```bash
     bun index.js
     ```
-
-mcp client that is connected to the model and then model can able to perform the action on github and git
