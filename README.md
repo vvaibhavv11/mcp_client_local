@@ -1,23 +1,59 @@
-# mcp_client_local
+# My Bun Project
 
-## Description
+A modern JavaScript project using Bun.
 
-The MCP client connects to a model, enabling the model to perform actions on GitHub and Git. This allows for automated interactions with repositories, such as creating issues, commenting on pull requests, and managing files.
+## Getting Started
 
-## Setup Instructions
+### Prerequisites
+- Node.js installed on your system
+- Bun installed globally (`curl https://bun.sh/install | sh`)
 
-1.  **Install Bun:** This project requires Bun. You can install it from [https://bun.sh/](https://bun.sh/).
+### Installation
+1. Clone the repository
+```bash
+ git clone [your-repository-url]
+```
+2. Navigate to the project directory
+```bash
+ cd your-project-name
+```
+3. Install dependencies using Bun
+```bash
+ bun add
+```
 
-2.  **Environment Variables:**
+### Compiling the Project
+To compile the project, run:
+```bash
+ bun build
+```
+This will create a compiled version of your project in the `dist` directory.
 
-    *   `GOOGLE_GEN_AI_API_KEY`: Your Google Generative AI API key. This is required for accessing the language model.
-    *   `GITHUB_TOKEN`: A GitHub personal access token (PAT) with the necessary permissions for the actions the model will perform (e.g., creating issues, commenting on PRs, pushing code). You can generate a PAT at [https://github.com/settings/tokens](https://github.com/settings/tokens).
-    *   `GITHUB_TOOLSETS`: Configuration for GitHub toolsets. Details depend on the application's use of GitHub.
+### Running the Project
+After compiling, you can run the compiled output with:
+```bash
+ ./dist/main.js
+```
 
-3.  **Start the application:**
+### How to Use
+1. Start the development server:
+```bash
+ bun run dev
+```
+2. Open your browser at `http://localhost:3000`
 
-    Run the following command:
+### Example Usage
+Here’s an example of using the compiled application:
+```bash
+ ./dist/main.js --input your-input --output your-output
+```
 
-    ```bash
-    bun index.js
-    ```
+## Contributing
+Pull requests are welcome! For major changes, please open an issue first to discuss what you would like to change.
+
+## License
+[Your License]
+
+## Acknowledgments
+- Thanks to the Bun community for making this possible!
+- Special thanks to [any contributors or resources used].
