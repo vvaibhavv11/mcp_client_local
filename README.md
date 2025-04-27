@@ -14,34 +14,22 @@ The MCP client connects to a model, enabling the model to perform actions on Git
     *   `GITHUB_TOKEN`: A GitHub personal access token (PAT) with the necessary permissions for the actions the model will perform (e.g., creating issues, commenting on PRs, pushing code). You can generate a PAT at [https://github.com/settings/tokens](https://github.com/settings/tokens).
     *   `GITHUB_TOOLSETS`: Configuration for GitHub toolsets. Details depend on the application's use of GitHub.
 
-3.  **Start the application:**
+3.  **Create a single executable:**
 
-    Run the following command:
+    To create a single executable with Bun, use the following command:
 
     ```bash
-    bun index.js
+    bun build index.js --compile --outfile output
     ```
 
-## How to Compile and Use a Bun Project
+    This will create a standalone executable named `output`.
 
-To compile and use this project with Bun, follow these steps:
+    The `--target` flag lets you compile your standalone executable for a different operating system, architecture, or version of Bun than the machine you're running.
 
-1. **Install Dependencies:**
+4.  **Start the application:**
 
-   If you have a `bun.lockb` file, run:
+    Run the executable:
 
-   ```bash
-   bun install
-   ```
-
-   This command installs all the necessary dependencies listed in the `bun.lockb` file.
-
-2. **Run the Project:**
-
-   To execute the project, use the following command:
-
-   ```bash
-   bun index.js
-   ```
-
-   This will start the application using Bun.
+    ```bash
+    ./output
+    ```
